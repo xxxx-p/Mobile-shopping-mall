@@ -174,6 +174,7 @@ export default {
         .then(res => {
           if (res.data.code == 400) {
             this.$router.push("/Login");
+            console.log(res)
             return;
           }
           let data = res.data.data;
