@@ -10,27 +10,27 @@
   width: 90%;
   background: white;
   color: #c3c5c4;
-  margin: 0.133333rem 5% 0 5%;
-  border-radius: 0.4rem;
+  margin: 5px 5% 0 5%;
+  border-radius: 15px;
   text-align: center;
   z-index: 1;
-  height: 4%;
+  height: 32px;
   border: 0;
-  font-size: 0.326667rem;
+  font-size: 12px;
 }
 
 .cuIcon-search {
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: 4%;
+  height: 32px;
 }
 
 .cuIcon-search:before {
   position: fixed;
-  left: 4rem;
-  top: 1.4%;
-  font-size: 0.426667rem;
+  left: 150px;
+  top: 14px;
+  font-size: 15px;
   z-index: 3;
 }
 </style>

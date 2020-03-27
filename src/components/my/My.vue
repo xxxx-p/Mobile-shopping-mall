@@ -165,17 +165,17 @@ export default {
   .header {
     display: flex;
     justify-content: center;
-    padding: 0.586667rem;
+    padding: 22px;
     box-sizing: border-box;
     width: 100%;
     background: #3bba63;
 
     .header-img {
-      width: 1.6rem;
+      width: 60px;
       height: 100%;
       box-sizing: border-box;
-      margin-right: .533333rem;
-      border-radius: 0.8rem;
+      margin-right: 20px;
+      border-radius: 30px;
       overflow: hidden;
 
       img {
@@ -186,23 +186,22 @@ export default {
 
     .header-con {
       display: flex;
-      padding: .133333rem;
+      padding: 10px;
       flex: 1;
       flex-direction: column;
-      font-size: 0.346667rem;
+      font-size: 13px;
       color: #fff;
 
       span {
-        margin-bottom: 0.4rem;
+        margin-bottom: 10px;
       }
     }
 
     .cuIcon-right {
-      width: 1.12rem;
       text-align: center;
-      line-height: 1.573333rem;
+      line-height: 59px;
       color: #fff;
-      font-size: 0.533333rem;
+      font-size: 20px;
     }
   }
 
@@ -210,20 +209,20 @@ export default {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 2rem;
+    height: 75px;
     background: #fff;
 
     .card-con {
       display: flex;
       flex-direction: column;
-      font-size: 0.32rem;
-      width: 12.133333rem;
-      height: 2rem;
+      font-size: 12px;
+      width: 1249px;
+      height: 75px;
       justify-content: center;
       align-items: center;
 
       span {
-        margin-bottom: 0.133333rem;
+        margin-bottom: 5px;
       }
 
       .num {
@@ -238,38 +237,38 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 3.733333rem;
+    height: 140px;
     background: #fff;
-    padding: 0.133333rem 0.4rem 0.133333rem 0.4rem;
-    margin-top: 0.266667rem;
+    padding: 5px 12px 5px 12px;
+    margin-top: 9.5px;
     box-sizing: border-box;
 
     .tab-con {
       color: #878787;
-      font-size: 0.9rem;
+      font-size: 33.75px;
     }
 
     .tab-header {
       display: flex;
       border-bottom: 1px solid #ebebeb;
       width: 100%;
-      height: 1.253333rem;
+      height: 47px;
       justify-content: space-between;
-      margin-top: 0.133333rem;
+      margin-top: 5px;
 
       .tab-left {
         display: flex;
 
         span {
           color: #0f0f0f;
-          font-size: 0.4rem;
+          font-size: 12px;
         }
 
         .cuIcon-edit {
           color: #ffd944;
-          font-size: 0.48rem;
+          font-size: 18px;
           font-weight: 900;
-          margin-right: 0.266667rem;
+          margin-right: 9.5px;
         }
       }
 
@@ -278,24 +277,24 @@ export default {
 
         span {
           color: #909090;
-          margin-right: 0.133333rem;
-          font-size: 0.32rem;
+          margin-right: 5px;
+          font-size: 12px;
         }
 
         .cuIcon-right {
           color: #c6c6c6;
-          font-size: 0.4rem;
+          font-size: 12px;
         }
       }
     }
 
     .tab-body {
       width: 100%;
-      height: 2.4rem;
+      height: 90px;
       display: flex;
       justify-content: center;
       position: relative;
-      top: 0.266667rem;
+      top: 9.5px;
 
       .tab-con {
         display: flex;
@@ -304,19 +303,19 @@ export default {
         justify-content: center;
         flex: 1;
         align-items: center;
-        height: 2.4rem;
+        height: 90px;
 
         .van-info {
-          top: .266667rem;
-          right: .4rem;
+          top: 9.75px;
+          right: 12px;
         }
 
         span {
           width: 100%;
-          height: 1.013333rem;
-          line-height: 0.8rem;
+          height: 38px;
+          line-height: 30px;
           color: #131313;
-          font-size: 0.346667rem;
+          font-size: 13px;
           text-align: center;
         }
       }
@@ -324,20 +323,20 @@ export default {
   }
 
   .item-con {
-    margin-top: 0.266667rem;
-    margin-bottom: 0.4rem;
+    margin-top: 9.5px;
+    margin-bottom: 12px;
 
     .item {
       display: flex;
       justify-content: center;
-      height: 1.333333rem;
+      height: 48px;
       background-color: white;
       align-items: center;
-      padding: 0 0.533333rem;
+      padding: 0 20px;
 
       .cuIcon-friendaddfill, .cuIcon-addressbook, .cuIcon-dianhua, .cuIcon-commentfill {
-        font-size: 0.48rem;
-        margin-right: 0.266667rem;
+        font-size: 18px;
+        margin-right: 9.5px;
         color: #fec535;
       }
 
@@ -351,12 +350,12 @@ export default {
 
       .text {
         color: #8799a3;
-        font-size: 0.4rem;
+        font-size: 12px;
         flex: 1;
       }
 
       .cuIcon-right {
-        font-size: 0.453333rem;
+        font-size: 17px;
       }
     }
   }
@@ -364,15 +363,15 @@ export default {
   .item {
     display: flex;
     justify-content: center;
-    height: 1.333333rem;
+    height: 48px;
     background-color: white;
     align-items: center;
-    padding: 0 0.533333rem;
+    padding: 0 20px;
 
     .cuIcon-card, .cuIcon-infofill {
       color: rgb(254, 197, 53);
-      font-size: 0.48rem;
-      margin-right: 0.266667rem;
+      font-size: 18px;
+      margin-right: 9.5px;
       color: rgb(118, 211, 72);
     }
 
@@ -382,21 +381,21 @@ export default {
 
     .text {
       color: #8799a3;
-      font-size: 0.4rem;
+      font-size: 12px;
       flex: 1;
     }
 
     .cuIcon-right {
-      font-size: 0.453333rem;
+      font-size: 17px;
     }
   }
 
   .footer {
     width: 100%;
-    height: 3.133333rem;
+    height: 60px;
     text-align: center;
-    font-size: 0.266667rem;
-    line-height: 2.133333rem;
+    font-size: 9.5px;
+    line-height: 60px;
     color: #999;
   }
 }

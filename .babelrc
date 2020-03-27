@@ -2,6 +2,10 @@
   "presets": [
     [
       "@babel/preset-env"
+      // {
+      //   "useBuiltIns": "usage", //babel-polyfill 按需引入
+      //   "corejs": 3 ////babel-polyfill 按需引入 ie无法兼容
+      // }
     ]
   ],
   "plugins": [
@@ -12,7 +16,7 @@
         "libraryName": "vant",
         "libraryDirectory": "es",
         "style": true
-      }//按需引入vant
+      } //按需引入vant
     ]
   ]
 }

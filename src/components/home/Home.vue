@@ -238,7 +238,7 @@ export default {
   .nav {
     display: flex;
     width: 100%;
-    height: 5.333333rem;
+    height: 200px;
     flex-wrap: wrap;
 
     .nav-item {
@@ -246,18 +246,19 @@ export default {
       box-sizing: border-box;
       flex-direction: column;
       width: 20%;
-      height: 2.4rem;
-      padding: 0.266667rem;
+      flex-shrink: 0;
+      padding: 9.5px;
+      align-items: center;
 
       .nav-img {
-        width: 1.333333rem;
-        height: 1.333333rem;
-        border-radius: 0.666667rem;
+        width: 48px;
+        height: 48px;
+        border-radius: 23px;
       }
 
       span {
-        margin-top: 0.133333rem;
-        font-size: 0.32rem;
+        margin-top: 5px;
+        font-size: 12px;
         font-weight: 600;
         color: #3c3b3b;
         text-align: center;
@@ -270,12 +271,12 @@ export default {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0.266667rem 0 0.266667rem 0;
+    margin: 9.5px 0 9.5px 0;
     background-image: -webkit-linear-gradient(left top, #3db762, #44ce61);
     width: 95%;
-    height: 1.146667rem;
-    border-radius: 0.133333rem;
-    font-size: 0.32rem;
+    height: 43px;
+    border-radius: 5px;
+    font-size: 12px;
     color: #fff;
 
     .cuIcon-crownfill {
@@ -284,7 +285,7 @@ export default {
       display: flex;
       align-items: center;
       color: #f9e974;
-      font-size: 0.533333rem;
+      font-size: 20px;
     }
 
     .vip-text-left {
@@ -301,21 +302,21 @@ export default {
 
   .today-tab {
     width: 100%;
-    height: 1.333333rem;
-    padding: 0.32rem 0.266667rem 0.32rem 0.186667rem;
+    height: 48px;
+    padding: 12px 9.5px 12px 6.75px;
     box-sizing: border-box;
     display: flex;
     background-color: white;
 
     .cuIcon-titles {
       color: rgb(62, 205, 96);
-      line-height: 0.693333rem;
+      line-height: 25px;
     }
 
     .text {
       position: relative;
-      left: 0.133333rem;
-      font-size: 0.48rem;
+      left: 5px;
+      font-size: 18px;
       font-weight: 700;
     }
 
@@ -326,21 +327,21 @@ export default {
       top: 20%;
 
       .time-item {
-        width: 0.506667rem;
-        height: 0.4rem;
+        width: 18px;
+        height: 18px;
         background: #fd6069;
         color: #fff;
-        font-size: 0.213333rem;
-        border-radius: 0.053333rem;
-        margin: 0 0.08rem 0 0.08rem;
+        font-size: 8px;
+        border-radius: 2px;
+        margin: 0 3px 0 3px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
       span {
-        font-size: 0.213333rem;
-        margin: 0 0.08rem 0 0.08rem;
+        font-size: 8px;
+        margin: 0 3px 0 3px;
       }
     }
   }
@@ -348,7 +349,7 @@ export default {
   .today-con {
     width: 100%;
     overflow: auto;
-    margin-bottom: 0.266667rem;
+    margin-bottom: 9.5px;
 
     .today-con-con {
       flex-wrap: nowrap;
@@ -363,7 +364,7 @@ export default {
 
         .con-img {
           box-sizing: border-box;
-          padding: 0.133333rem 0.266667rem 0.266667rem 0.266667rem;
+          padding: 5px 9.5px 9.5px 9.5px;
           width: 100%;
           height: 55%;
 
@@ -374,12 +375,12 @@ export default {
         }
 
         .con-text {
-          font-size: 0.32rem;
+          font-size: 12px;
           color: #101010;
-          padding: 0 0.266667rem;
+          padding: 0 9.5px;
           box-sizing: border-box;
-          width: 2.933333rem;
-          height: 0.8rem;
+          width: 112px;
+          height: 30px;
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
@@ -392,29 +393,29 @@ export default {
           .con-price {
             display: flex;
             flex-direction: column;
-            width: 1.733333rem;
-            height: 0.266667rem;
+            width: 65px;
+            height: 9.5px;
 
             .vip-price {
               color: #f15c6b;
-              font-size: 0.373333rem;
+              font-size: 14px;
               text-align: center;
             }
 
             .price {
               color: #a8a8a8;
-              font-size: 0.213333rem;
+              font-size: 8px;
               text-align: center;
             }
           }
 
           .cuIcon-cart-con {
             position: relative;
-            width: 0.8rem;
-            height: 0.8rem;
+            width: 30px;
+            height: 30px;
             background: #3bb86a;
-            border-radius: 0.4rem;
-            font-size: 0.4rem;
+            border-radius: 30px;
+            font-size: 15px;
             color: #fff;
 
             .cuIcon-cart {

@@ -45,7 +45,7 @@
         <van-icon name="arrow" />
       </template>
     </van-nav-bar>
-    <van-nav-bar class="item" left-text="备注" style="margin-bottom:.6rem">
+    <van-nav-bar class="item" left-text="备注" style="margin-bottom:23px">
       <template #title>
         <input type="text" placeholder="选填,告诉小哥你的特殊要求" />
       </template>
@@ -56,7 +56,7 @@
         <van-icon name="arrow" />
       </template>
     </van-nav-bar>
-    <van-nav-bar class="item" left-text="优惠券" style="margin-bottom:.3rem">
+    <van-nav-bar class="item" left-text="优惠券" style="margin-bottom:23px">
       <template #right>
         <span>0张可用</span>
         <van-icon name="arrow" />
@@ -172,6 +172,10 @@ export default {
           }
         })
         .then(res => {
+          if (res.data.code == 400) {
+            this.$router.push("/Login");
+            return;
+          }
           let data = res.data.data;
           data.forEach(item => {
             item.name = item.address_name;
@@ -363,17 +367,17 @@ export default {
   }
 
   .van-icon-arrow-left {
-    font-size: 0.62rem;
+    font-size: 15px;
   }
 }
 
 .home {
-  height: 2rem;
+  height: 75px;
 
   .van-nav-bar__left, .van-nav-bar__right {
-    height: 2rem;
-    line-height: 2rem;
-    font-size: 0.613333rem;
+    height: 75px;
+    line-height: 75px;
+    font-size: 23px;
 
     .address-header {
       height: 100%;
@@ -381,10 +385,10 @@ export default {
       flex-direction: column;
 
       span {
-        height: 1.066667rem;
-        line-height: 1.2rem;
+        height: 40px;
+        line-height: 40px;
         color: #131313;
-        font-size: 0.4rem;
+        font-size: 15px;
         font-weight: 600;
       }
 
@@ -392,20 +396,20 @@ export default {
         display: flex;
 
         span {
-          height: 1.126667rem;
-          line-height: 0.533333rem;
+          height: 45px;
+          line-height: 20px;
           font-weight: 1;
         }
       }
     }
 
     span {
-      margin-left: 0.266667rem;
-      font-size: 0.4rem;
+      margin-left: 9.5px;
+      font-size: 15px;
     }
 
     .van-icon-arrow {
-      font-size: 0.4rem;
+      font-size: 15px;
       color: #aaa !important;
     }
   }
@@ -418,7 +422,7 @@ export default {
 
   .van-nav-bar__right {
     color: #23884c;
-    font-size: 0.346667rem;
+    font-size: 13px;
     display: flex;
     align-items: center;
   }
@@ -427,13 +431,13 @@ export default {
     border: 0;
     width: 110%;
     padding: 0;
-    margin-bottom: 0.8rem;
+    margin-bottom: 30px;
   }
 }
 
 .shop {
-  height: 2.266667rem;
-  margin-bottom: 0.266667rem;
+  height: 85px;
+  margin-bottom: 9.5px;
 
   .van-nav-bar__right {
     height: 100%;
@@ -443,16 +447,16 @@ export default {
     height: 100%;
 
     .img-con {
-      width: 7.066667rem;
+      width: 263px;
       overflow: hidden;
       display: flex;
       align-items: center;
       height: 100%;
 
       .img-item {
-        width: 0.88rem;
-        height: 0.88rem;
-        margin-right: 0.566667rem;
+        width: 33px;
+        height: 33px;
+        margin-right: 21px;
         flex-shrink: 0;
 
         img {
@@ -466,8 +470,8 @@ export default {
 
 .order-hr {
   width: 100%;
-  height: 0.133333rem;
-  margin-bottom: 0.266667rem;
+  height: 5px;
+  margin-bottom: 9.5px;
   background-image: repeating-linear-gradient(-45deg, #fd3ff7, #fd3ff7 5%, #fff 0, #fff 10%, #367dff 0, #367dff 15%, #fff 0, #fff 20%);
 }
 </style>

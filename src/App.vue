@@ -58,62 +58,62 @@
     .icon-home {
       background: url('./assets/tabbar/h1.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .active-home {
       background: url('./assets/tabbar/h2.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .icon-classification {
       background: url('./assets/tabbar/c1.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .active-classification {
       background: url('./assets/tabbar/c2.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .icon-shop {
       background: url('./assets/tabbar/g1.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .active-shop {
       background: url('./assets/tabbar/g2.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .icon-my {
       background: url('./assets/tabbar/i1.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     .active-my {
       background: url('./assets/tabbar/i2.png') no-repeat;
       background-size: cover;
-      width: 13px;
-      height: 13px;
+      width: 24px;
+      height: 24px;
     }
 
     span {
       color: rgb(122, 126, 131);
-      font-size: 0.266667rem;
+      font-size: 10px;
     }
   }
 }

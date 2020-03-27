@@ -46,7 +46,7 @@ export default {
       content.address_addressDetail = content.addressDetail; //接口需要的详细地址
       this.axiosSave(content).then(() => {
         this.SET_ADDRESSINFO(content);
-        this.$router.push("/Settlement");
+        this.$router.go(-1);
       });
     },
     axiosSave(content) {

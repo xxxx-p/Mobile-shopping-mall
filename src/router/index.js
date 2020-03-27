@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../components/home/Home.vue'
-import Shop from '../components/shop/Shop.vue'
-import Classification from '../components/classification/Classification.vue'
-import My from '../components/my/My.vue'
-import Login from '../components/login/Login.vue'
-import Settlement from '../components/settlement/Settlement.vue'
-import Address from '../components/address/Address.vue'
-import AddressEdit from '../components/addressedit/AddressEdit.vue'
-import Allorder from '../components/allorder/Allorder.vue'
 
+const Home = () => import('../components/home/Home.vue')
+const Shop = () => import('../components/shop/Shop.vue')
+const Classification = () => import('../components/classification/Classification.vue')
+const My = () => import('../components/my/My.vue')
+const Login = () => import('../components/login/Login.vue')
+const Settlement = () => import('../components/settlement/Settlement.vue')
+const Address = () => import('../components/address/Address.vue')
+const AddressEdit = () => import('../components/addressedit/AddressEdit.vue')
+const Allorder = () => import('../components/allorder/Allorder.vue')
 Vue.use(VueRouter)
 
 const routes = [

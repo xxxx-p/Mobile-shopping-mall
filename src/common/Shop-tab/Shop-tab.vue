@@ -32,24 +32,24 @@ export default {
 .like-con {
   background-color: white;
   display: flex;
-  padding: 0 0.266667rem 0.266667rem;
-  margin-bottom: 1.333333rem;
+  padding: 0 9.5px 9.5px;
+  margin-bottom: 48px;
   flex-wrap: wrap;
   justify-content: space-between;
 
   .like-con-item {
     width: 49%;
-    height: 7.333333rem;
+    height: 275px;
     border: 1px solid #eee;
-    border-radius: 0.133333rem;
-    padding: 0px 0.266667rem 0px 0.266667rem;
+    border-radius: 5px;
+    padding: 0px 9.5px 0px 9.5px;
     box-sizing: border-box;
     flex-shrink: 0;
-    margin-bottom: 0.266667rem;
+    margin-bottom: 9.5px;
 
     .like-con-img {
       box-sizing: border-box;
-      padding: 0.133333rem 0.266667rem 0.266667rem 0.266667rem;
+      padding: 5px 9.5px 9.5px 9.5px;
       width: 100%;
       height: 55%;
 
@@ -60,12 +60,12 @@ export default {
     }
 
     .like-con-text {
-      font-size: 0.32rem;
+      font-size: 12px;
       color: #101010;
-      padding: 0 0.266667rem;
+      padding: 0 9.5px;
       box-sizing: border-box;
-      width: 4.08rem;
-      height: 0.906667rem;
+      width: 153px;
+      height: 34px;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
@@ -75,54 +75,54 @@ export default {
 
     .like-con-bottom {
       display: flex;
-      height: 1.813333rem;
-      width: 1.666667rem;
+      height: 67px;
+      width: 60px;
 
       .like-con-price {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 1.066667rem;
-        width: 1.733333rem;
-        height: 0.506667rem;
+        top: 40px;
+        width: 65px;
+        height: 19px;
 
         .like-vip-price {
           color: #f15c6b;
-          font-size: 0.293333rem;
+          font-size: 11px;
           text-align: center;
         }
 
         .like-price {
           color: #f45a6c;
-          font-size: 0.346667rem;
-          margin-bottom: 0.133333rem;
+          font-size: 13px;
+          margin-bottom: 5px;
           text-align: center;
         }
 
         .like-green-car {
           position: absolute;
-          top: 0.4rem;
-          left: 0.933333rem;
-          width: 0.8rem;
-          height: 0.4rem;
+          top: 15px;
+          left: 35px;
+          width: 30px;
+          height: 15px;
           background: #30bd4c;
           color: #fff;
-          font-size: 0.213333rem;
-          padding: 0.053333rem 0.133333rem;
+          font-size: 8px;
+          padding: 2px 5px;
         }
       }
 
       .like-cuIcon-cart-con {
         position: relative;
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 30px;
+        height: 30px;
         background: #3bb86a;
-        border-radius: 0.4rem;
+        border-radius: 15px;
         flex-shrink: 0;
-        font-size: 0.4rem;
+        font-size: 15px;
         color: #fff;
-        top: 1.066667rem;
-        left: 1.866667rem;
+        top: 40px;
+        left: 70px;
 
         .cuIcon-cart {
           position: absolute;

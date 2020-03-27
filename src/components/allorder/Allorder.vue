@@ -152,12 +152,12 @@ export default {
 }
 
 .Allorder>>>.bar-item {
-  margin-top: 0.333333rem;
+  margin-top: 12px;
 }
 
 .shop {
-  height: 2.266667rem;
-  margin-bottom: 0.266667rem;
+  height: 85px;
+  margin-bottom: 9.5px;
   background: #f5f5f5;
 
   .van-nav-bar__right {
@@ -170,16 +170,16 @@ export default {
     height: 100%;
 
     .img-con {
-      width: 7.066667rem;
+      width: 263px;
       overflow: hidden;
       display: flex;
       align-items: center;
       height: 100%;
 
       .img-item {
-        width: 1.48rem;
-        height: 1.48rem;
-        margin-right: 0.566667rem;
+        width: 56px;
+        height: 56px;
+        margin-right: 21px;
         flex-shrink: 0;
 
         img {

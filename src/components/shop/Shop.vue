@@ -255,79 +255,79 @@ export default {
     background-color: rgb(248, 248, 248);
     left: 0;
     top: 0;
-    padding: 0.186667rem 0.08rem;
+    padding: 6.75px 3px;
 
     span {
       display: flex;
       font-weight: 700;
-      font-size: 0.426667rem;
-      line-height: 0.8rem;
+      font-size: 15px;
+      line-height: 30px;
       text-align: center;
       justify-content: center;
     }
   }
 
   .buy-list {
-    margin-top: 1.5rem;
+    margin-top: 56px;
 
     .buy-list-item {
       display: flex;
       background: #fff;
-      height: 2.666667rem;
+      height: 98px;
       align-items: center;
       border-bottom: 1px solid #efefef;
-      padding: 0 0.133333rem 0 0.266667rem;
+      padding: 0 5px 0 9.5px;
 
       .cuIcon-round, .cuIcon-roundcheckfill {
-        font-size: 0.533333rem;
-        width: 1.2rem;
+        font-size: 20px;
+        width: 45px;
       }
 
       .img {
-        width: 1.92rem;
-        height: 2.026667rem;
+        width: 72px;
+        height: 75px;
 
         img {
           width: 100%;
           height: 100%;
-          margin-left: -0.266667rem;
+          margin-left: -9.5px;
         }
       }
 
       .right {
-        width: 6.666667rem;
-        height: 2.666667rem;
-        padding: 0.266667rem 0.133333rem 0 0;
+        width: 250px;
+        height: 98px;
+        padding: 9.5px 5px 0 0;
 
         span {
           display: block;
           width: 100%;
-          height: 0.613333rem;
-          line-height: 0.613333rem;
-          font-size: 0.32rem;
+          height: 23px;
+          line-height: 23px;
+          font-size: 12px;
           color: #262626;
           text-overflow: ellipsis;
           overflow: hidden;
           font-weight: 600;
-          margin-bottom: 0.8rem;
+          margin-bottom: 30px;
         }
 
         .right-bottom {
           width: 100%;
-          height: 0.586667rem;
+          height: 22px;
 
           span {
-            height: 0.586667rem;
+            height: 22px;
             font-weight: 700;
-            font-size: 0.346667rem;
+            font-size: 13px;
             color: #212121;
           }
 
           .count {
             display: flex;
             justify-content: center;
-            width: 1.866667rem;
-            height: 0.586667rem;
+            width: 70px;
+            height: 22px;
             position: relative;
             left: 75%;
             top: -220%;
@@ -337,15 +337,16 @@ export default {
             }
 
             .count-num {
-              width: 1.013333rem;
-              height: 0.586667rem;
-              font-size: 0.4rem;
+              width: 38px;
+              height: 22px;
+              flex-shrink: 0;
+              font-size: 15px;
               text-align: center;
-              line-height: 0.586667rem;
+              line-height: 22px;
               display: inline-block;
               background: #f9f9f9;
               color: #1b1b1b;
-              margin-left: -0.4rem;
+              margin-left: -0.15px;
             }
           }
         }
@@ -356,12 +357,12 @@ export default {
   .body {
     width: 100%;
     background: #f5f5f5;
-    padding-top: 1.5rem;
+    padding-top: 56px;
     box-sizing: border-box;
-    height: 12rem;
+    height: 430px;
 
     .body-car-img {
-      margin-top: 1.5rem;
+      margin-top: 56px;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -371,21 +372,20 @@ export default {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      width: 4rem;
-      height: 1.066667rem;
-      border-radius: 0.533333rem;
+      width: 150px;
+      height: 40px;
+      border-radius: 20px;
       color: #fff;
       background: #45c763;
       text-align: center;
-      line-height: 1.066667rem;
-      font-size: 0.48rem;
-      margin-top: 1rem;
+      line-height: 40px;
+      font-size: 18px;
+      margin-top: 37.5px;
     }
   }
 
   .body-like {
-    font-size: 0.4rem;
-    display: inline-block;
+    font-size: 15px;
     text-align: center;
     width: 100%;
 
@@ -395,9 +395,9 @@ export default {
 
     span {
       width: 100%;
-      height: 0.96rem;
-      padding-top: 0.133333rem;
-      line-height: 0.826667rem;
+      height: 37px;
+      padding-top: 5px;
+      line-height: 37px;
       color: #0a0a0a;
     }
   }
@@ -412,52 +412,52 @@ export default {
     bottom: 9%;
     left: 0;
     width: 100%;
-    height: 1.333333rem;
+    height: 48px;
     background-color: #fff;
     align-items: center;
 
     .cuIcon {
-      height: 0.933333rem;
+      height: 35px;
       display: flex;
       flex-direction: column;
       position: relative;
-      left: 0.8rem;
+      left: 30px;
 
       .cuIcon-round, .cuIcon-roundcheckfill {
-        font-size: 0.533333rem;
+        font-size: 20px;
       }
 
       span {
-        font-size: 0.293333rem;
+        font-size: 11px;
       }
     }
 
     .price {
-      font-size: 0.373333rem;
+      font-size: 14px;
       position: relative;
-      left: 4.333333rem;
-      width: 2.666667rem;
+      left: 162px;
+      width: 98px;
     }
 
     .btn {
       position: relative;
       left: 55%;
       transform: translateX(-70%);
-      width: 1.8rem;
-      height: 0.9rem;
-      border-radius: 0.833333rem;
+      width: 67.5px;
+      height: 33.75px;
+      border-radius: 31px;
       background-color: #e54d42;
       color: #fff;
       text-align: center;
-      line-height: 1.066667rem;
-      font-size: 0.48rem;
-      font-size: 0.373333rem;
+      line-height: 40px;
+      font-size: 18px;
+      font-size: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
 
       span {
-        font-size: 0.373333rem;
+        font-size: 14px;
       }
     }
   }

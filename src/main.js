@@ -2,9 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import 'amfe-flexible' //移动端rem适配
 import "./assets/css/icon.css";
 import "./assets/css/main.css";
-import './assets/js/rem' //移动端rem适配
 Vue.config.productionTip = false;
 
 /** vant组件库引入组件 */

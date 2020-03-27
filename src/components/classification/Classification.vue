@@ -201,9 +201,9 @@ div>>>.search {
       background: #f7f7f7;
 
       .tab-item {
-        font-size: 0.32rem;
+        font-size: 12px;
         height: 7%;
-        width: 3.04rem;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -220,29 +220,30 @@ div>>>.search {
       flex-direction: column;
       height: 100%;
       overflow: auto;
-      padding-bottom: 1.333333rem;
+      padding-bottom: 48px;
       box-sizing: border-box;
+      flex: 1;
 
       .title {
-        height: 1.013333rem;
+        height: 38px;
         border-bottom: 1px solid #efefef;
-        font-size: 0.32rem;
-        margin-left: 0.4rem;
-        line-height: 1.013333rem;
+        font-size: 12px;
+        margin-left: 15px;
+        line-height: 38px;
         color: #5e5e5e;
       }
 
       .item {
         display: flex;
-        height: 3.866667rem;
+        height: 143px;
         flex-shrink: 0;
-        padding: 0.533333rem 0.4rem 0.266667rem 0.293333rem;
+        padding: 20px 15px 9.5px 11px;
         box-sizing: border-box;
         border-bottom: 1px solid #efefef;
 
         .item-img {
-          width: 2.08rem;
-          height: 2.266667rem;
+          width: 75px;
+          height: 85px;
           flex-shrink: 0;
 
           img {
@@ -254,24 +255,24 @@ div>>>.search {
         .item-cont {
           display: flex;
           flex-direction: column;
-          margin-left: 0.4rem;
+          margin-left: 15px;
           box-sizing: border-box;
 
           .item-name {
-            height: 0.506667rem;
+            height: 19px;
             color: #373737;
-            font-size: 0.346667rem;
-            line-height: 0.506667rem;
+            font-size: 13px;
+            line-height: 19px;
             text-overflow: ellipsis;
             overflow: hidden;
           }
 
           .item-text {
             width: 100%;
-            height: 0.453333rem;
+            height: 17px;
             color: #8c8c8c;
-            font-size: 0.293333rem;
-            line-height: 0.453333rem;
+            font-size: 11px;
+            line-height: 17px;
             text-overflow: ellipsis;
             overflow: hidden;
           }
@@ -279,24 +280,28 @@ div>>>.search {
           .item-bottom {
             display: flex;
             align-items: center;
+            width: 123px;
+            height: 32px;
 
             span {
-              margin-top: 0.4rem;
+              margin-top: 15px;
               color: #ff4f67;
               font-weight: 600;
-              font-size: 0.373333rem;
+              font-size: 14px;
+              width: 50px;
+              height: 20px;
             }
 
             .like-cuIcon-cart-con {
               position: relative;
-              width: 0.8rem;
-              height: 0.8rem;
+              width: 30px;
+              height: 30px;
               background: #3bb86a;
-              border-radius: 0.4rem;
-              font-size: 0.4rem;
+              border-radius: 15px;
+              font-size: 15px;
               color: #fff;
-              left: 1.6rem;
-              top: 0.533333rem;
+              left: 60px;
+              top: 20px;
 
               .cuIcon-cart {
                 position: absolute;

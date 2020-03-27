@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <div class="header">登陆/注册</div>
+    <van-nav-bar class="tab header" title="收货地址" @click-left="selectretrun" left-arrow />
     <div class="body">
       <input v-model="phone" type="number" placeholder="输入手机号(新手机号自动注册)" />
       <div>
@@ -63,6 +63,9 @@ export default {
       } else {
         return;
       }
+    },
+    selectretrun() {
+      this.$router.go(-1);
     }
   }
 };
@@ -75,55 +78,55 @@ export default {
   .header {
     background-color: rgb(248, 248, 248);
     color: rgb(0, 0, 0);
-    height: 5%;
+    height: 44px;
+    line-height: 44px;
     text-align: center;
-    padding: 0.266667rem 0.08rem;
     font-weight: 700;
-    font-size: 0.426667rem;
+    font-size: 15px;
     box-sizing: border-box;
   }
 
   .body {
     background-color: white;
     height: 95%;
-    font-size: 0.4rem;
+    font-size: 12px;
 
     input {
       border: 0;
       width: 100%;
-      height: 1.333333rem;
+      height: 48px;
       border-bottom: 0.5px solid #ccc;
-      padding-left: 0.32rem;
-      padding-right: 0.666667rem;
+      padding-left: 12px;
+      padding-right: 23px;
       box-sizing: border-box;
-      margin-bottom: 0.266667rem;
+      margin-bottom: 9.5px;
     }
 
     .btn {
-      font-size: 0.4rem;
+      font-size: 12px;
       background: #ccc;
-      width: 2.666667rem;
-      height: 1.066667rem;
+      width: 98px;
+      height: 40px;
       text-align: center;
-      line-height: 1.066667rem;
+      line-height: 40px;
       color: #fff;
-      border-radius: 0.533333rem;
+      border-radius: 20px;
       position: absolute;
-      right: 0.32rem;
-      top: 2.666667rem;
+      right: 12px;
+      top: 98px;
     }
 
     .sub {
-      width: 9.333333rem;
-      height: 1.333333rem;
-      margin-left: 0.32rem;
+      width: 348px;
+      height: 48px;
+      margin-left: 12px;
       background: #ccc;
       text-align: center;
-      line-height: 1.333333rem;
+      line-height: 48px;
       color: #fff;
-      border-radius: 0.666667rem;
-      font-size: 0.48rem;
-      margin-top: 0.266667rem;
+      border-radius: 23px;
+      font-size: 18px;
+      margin-top: 9.5px;
     }
 
     .blue {
