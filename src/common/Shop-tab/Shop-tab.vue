@@ -28,7 +28,7 @@ export default {
   }
 };
 </script>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .like-con {
   background-color: white;
   display: flex;

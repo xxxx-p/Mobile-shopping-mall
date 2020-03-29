@@ -3,7 +3,7 @@
     <input class="search" type="text" placeholder="黄瓜" />
   </div>
 </template>
-<style lang="stylus">
+<style lang="stylus" scoped>
 .search {
   display: block;
   position: fixed;
