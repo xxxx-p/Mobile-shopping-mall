@@ -82,11 +82,15 @@ export default {
       likelist: [],
       hour: "",
       minutes: "",
-      sec: ""
+      sec: "",
+      scroll: 0,
     };
   },
   computed: {
     ...mapGetters(["classId", "buylist", "select"])
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
   components: { Search, swiper, swiperSlide, Shoptab },
   activated() {
@@ -95,6 +99,10 @@ export default {
     this.getOneClass();
     this.getInsane();
     this.gethomeLive(1, 10);
+    this.setScroll();
+  },
+  deactivated() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     time() {
@@ -181,6 +189,17 @@ export default {
     },
     selebuy(index) {
       this.selectcom(index, true);
+    },
+    setScroll() {
+      if (this.scroll > 0) {
+        window.scrollTo(0, this.scroll);
+        this.scroll = 0;
+        window.addEventListener("scroll", this.handleScroll);
+      }
+    },
+    handleScroll() {
+      this.scroll =
+        document.documentElement && document.documentElement.scrollTop;
     },
     ...mapMutations({
       SET_BUYLIST: "SET_BUYLIST",

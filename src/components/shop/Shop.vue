@@ -63,7 +63,8 @@ export default {
   data() {
     return {
       list: [],
-      allselect: false //全选按钮是否选中
+      allselect: false, //全选按钮是否选中
+      scroll: 0
     };
   },
   computed: {
@@ -74,6 +75,15 @@ export default {
   },
   created() {
     this.getlike();
+  },
+  deactivated() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  activated() {
+    this.setScroll();
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
   watch: {
     select() {
@@ -138,7 +148,6 @@ export default {
         } else {
           list.splice(index, 1, list[index]);
           this.SET_BUYLIST(list);
-          this.$forceUpdate();
         }
       }
     },
@@ -232,6 +241,17 @@ export default {
       } else {
         this.$toast("请先选择商品");
       }
+    },
+    setScroll() {
+      if (this.scroll > 0) {
+        window.scrollTo(0, this.scroll);
+        this.scroll = 0;
+        window.addEventListener("scroll", this.handleScroll);
+      }
+    },
+    handleScroll() {
+      this.scroll =
+        document.documentElement && document.documentElement.scrollTop;
     },
     ...mapMutations({
       SET_BUYLIST: "SET_BUYLIST",
